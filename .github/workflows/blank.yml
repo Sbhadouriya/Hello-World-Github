@@ -1,12 +1,11 @@
 
 
 name: Greeting from Shraddha
-
-# Controls when the action will run. 
 on: push
+
 jobs:
   my-job:
-    name: Student
+    name: My Job
     runs-on: ubuntu latest
     steps:
     - name: Print a greeting
