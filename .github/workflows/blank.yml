@@ -1,0 +1,19 @@
+
+
+name: Greeting from Shraddha
+
+# Controls when the action will run. 
+on: push
+jobs:
+  my-job:
+    name: Student
+    runs-on: ubuntu latest
+    steps:
+    - name: Print a greeting
+      env:
+       MY_VAR: Hi there! My name is 
+       FIRST_NAME: Shraddha
+       MIDDLE_NAME: Rambir
+       LAST_NAME: Bhadouriya
+      run: |
+       echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
